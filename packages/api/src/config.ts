@@ -1,3 +1,5 @@
+
+require('dotenv').config({ path: __dirname + `/./../../../.env` }); 
 interface Config {
   port: string | undefined;
   env: string | undefined;
