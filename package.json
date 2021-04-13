@@ -2,7 +2,7 @@
   "name": "@lists/monorepo",
   "private": true,
   "engines": {
-    "node": "14.16.0"
+    "node": "12.18.0"
   },
   "scripts": {
     "dev": "lerna run dev --stream",
