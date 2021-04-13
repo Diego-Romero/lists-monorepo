@@ -1,0 +1,22 @@
+{
+  "name": "@lists/monorepo",
+  "private": true,
+  "scripts": {
+    "dev": "lerna run dev --stream",
+    "start": "lerna run start --stream",
+    "test": "lerna run test --stream",
+    "boot": "yarn global add lerna && lerna bootstrap",
+    "clean": "lerna run clean",
+    "build": "npm run clean && lerna run build --stream",
+    "build:client": "cd packages/client && npm run build",
+    "start:client": "cd packages/client && npm run start",
+    "build:api": "cd packages/api && npm run build",
+    "start:api": "cd packages/api && npm run start"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
