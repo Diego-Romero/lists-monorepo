@@ -16,7 +16,7 @@
     "start:client": "cd packages/client && npm run start",
     "build": "cd packages/api && npm run build",
     "postinstall": "npm run bootstrap && npm run build",
-    "start": "lerna bootstrap && cd packages/api && npm run start"
+    "start": "cd packages/api && npm run start"
   },
   "devDependencies": {
     "lerna": "^3.22.1"
